@@ -5,22 +5,7 @@ const {
   second,
   operator
 } = require('./inputValidator');
-const { error } = require("./library");
-
-const calculator = (num1, num2, operator) => {
-  switch (operator) {
-    case '+':
-      return num1 + num2;
-    case '-':
-      return num1 - num2;
-    case '/':
-      return num1 / num2;
-    case 'x':
-      return num1 * num2;
-    default:
-      error('Undefined operation.');
-  }
-}
+const {calculator} = require("./calculator");
 
 console.log(
   calculator(num1, second, operator)

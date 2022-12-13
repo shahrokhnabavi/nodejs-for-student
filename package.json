@@ -4,7 +4,8 @@
   "description": "this is a test to show how to use node package manager for maryam",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo CHANGE-IT",
+    "test:unit": "jest",
+    "test:unit:watch": "jest --watch",
     "start": "cat ./start.txt & node src/index.js 12 32 -",
     "lint-js": "echo CHANGE-IT"
   },
